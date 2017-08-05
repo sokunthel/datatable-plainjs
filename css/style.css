@@ -1,0 +1,111 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.dataTable-toggle {
+  float: left;
+}
+  .dataTable-toggle > ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .dataTable-toggle > ul > li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .dataTable-toggle > ul > li > label {
+    cursor: pointer;
+  }
+.dataTable-search {
+  float: right;
+}
+.dataTable-table {
+  clear: both;
+  padding: 20px 0;
+  width: 100%;
+}
+  .dataTable-table.hide-0 > thead > tr > th:nth-child(1),
+  .dataTable-table.hide-0 > tbody > tr > td:nth-child(1) {
+    display: none;
+  }
+  .dataTable-table.hide-1 > thead > tr > th:nth-child(2),
+  .dataTable-table.hide-1 > tbody > tr > td:nth-child(2) {
+    display: none;
+  }
+  .dataTable-table.hide-2 > thead > tr > th:nth-child(3),
+  .dataTable-table.hide-2 > tbody > tr > td:nth-child(3) {
+    display: none;
+  }
+  .dataTable-table.hide-3 > thead > tr > th:nth-child(4),
+  .dataTable-table.hide-3 > tbody > tr > td:nth-child(4) {
+    display: none;
+  }
+  .dataTable-table.hide-4 > thead > tr > th:nth-child(5),
+  .dataTable-table.hide-4 > tbody > tr > td:nth-child(5) {
+    display: none;
+  }
+  .dataTable-table.hide-5 > thead > tr > th:nth-child(6),
+  .dataTable-table.hide-5 > tbody > tr > td:nth-child(6) {
+    display: none;
+  }
+  .dataTable-table > thead > tr > th {
+    background: url(../img/sprite.png) no-repeat right -42px;
+    border-bottom: 2px solid #ddd;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  .dataTable-table > thead > tr > th.sort-order-asc {
+    background-position: right 12px;
+  }
+  .dataTable-table > thead > tr > th.sort-order-desc {
+    background-position: right -13px;
+  }
+
+  .dataTable-table > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  .dataTable-table > tbody > tr:hover {
+    background-color: #f5f5f5;
+  }
+  .dataTable-table > tbody > tr > td {
+    border-top: 1px solid #ddd;
+    padding: 8px;
+  }
+  .dataTable-table > tbody > tr > td:nth-child(4),
+  .dataTable-table > tbody > tr > td:last-child {
+    text-align: right;
+  }
+
+
+.dataTable-paginate {
+  float: right;
+}
+
+.dataTable-paginate__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.dataTable-paginate__button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.dataTable-paginate__button.active {
+  background-color: #E2E2E2;
+  border: 1px solid #979797;
+  text-align: center;
+}
+.dataTable-paginate__button.active:hover {
+  background-color: transparent;
+  color: #000;
+}

@@ -7,7 +7,7 @@ var dataSet,
     sortBy = [0, 'asc'],
     tempData = { head: ['Name', 'Position', 'Office', 'Age', 'Start date', 'Salary'] };
 
-loadJSON('/data.json', function(response) {
+loadJSON('data.json', function(response) {
   var dataSet = JSON.parse(response);
   renderTable(null, dataSet, true);
 });
